@@ -28,7 +28,7 @@ export default function Brands() {
       <h1 className="text-center text-4xl font-semibold text-[#0AAD0A] my-5">
         All Brands
       </h1>
-      <div className="container pb-5">
+      <div className="container pb-5 px-5">
         {isLoading ? (
           <div className="flex items-center justify-center h-screen">
             <Circles

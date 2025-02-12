@@ -73,7 +73,7 @@ export default function CheckOut() {
         onSubmit={Formik.handleSubmit}
         className="max-w-md mx-auto py-6"
       >
-        <div className="">
+        <div className="px-8">
           <div className="relative z-0 w-full mb-5 group">
             <input
               onChange={(e) =>

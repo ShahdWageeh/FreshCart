@@ -7,7 +7,7 @@ export default function AllOrders() {
   const { decoded } = useContext(AuthContext);
   const [userOrders, setUserOrders] = useState([])
   const{addToCart} = useContext(CartContext)
-  // console.log(decoded);
+
   
   async function getUserOrders() {
     try{
@@ -30,7 +30,7 @@ export default function AllOrders() {
       <h1 className="text-center text-4xl font-bold my-3 text-[#0AAD0A]">
         Your Orders
       </h1>
-      <div className="container my-5">
+      <div className="container my-5 px-5">
         {userOrders?.map((order)=>{return <>
         <h3 className="text-2xl font-semibold my-3">Order Date: {order.createdAt.split('T')[0]}</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">

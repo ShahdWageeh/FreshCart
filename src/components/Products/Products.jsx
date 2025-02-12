@@ -16,7 +16,7 @@ export default function Products() {
     wrapperStyle={{}}
     wrapperClass=""
     visible={true}
-    /></div>: <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-3 container mx-auto">
+    /></div>: <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-3 container mx-auto px-5">
               {data?.data.data.map((prod) => (
                 <ProductCard prod={prod} key={prod.id} />
               ))}

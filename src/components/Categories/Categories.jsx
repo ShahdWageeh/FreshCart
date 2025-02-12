@@ -32,7 +32,7 @@ export default function Categories() {
           />
         </div>
       ) : (
-        <div className="container my-10">
+        <div className="container my-10 px-5">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {catData?.data.data.map((cat) => {
               return (

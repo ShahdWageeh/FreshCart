@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <>
       {/* slider1 */}
-      <div className="container my-5">
+      <div className="container my-5 px-10">
         <div className="grid grid-cols-6">
           <div className="col-span-4">
             <Swiper slidesPerView={1} loop={true} style={{height:'100%'}}
@@ -49,7 +49,7 @@ export default function Home() {
       </div>
       {/* slider1 */}
       {/* slider2 */}
-      <div className="container my-8">
+      <div className="container my-8 px-10">
         <h2 className="text-2xl">Shop Popular Categories</h2>
         <Swiper slidesPerView={1} loop={true} className="my-4 pb-4" 
           breakpoints={{
@@ -87,7 +87,7 @@ export default function Home() {
           />
         </div>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-3 container mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-3 container mx-auto px-5">
           {data?.data.data.map((prod) => (
             <ProductCard prod={prod} key={prod.id} />
           ))}

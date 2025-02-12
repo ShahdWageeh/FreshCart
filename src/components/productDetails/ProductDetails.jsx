@@ -55,7 +55,7 @@ export default function ProductDetails() {
   }, []);
   return (
     <>
-      <div className="container my-8">
+      <div className="container my-8 px-5">
         <div className="flex flex-wrap items-center justify-center">
           <div className="w-full lg:w-1/3 pr-3">
             <Swiper

@@ -39,7 +39,7 @@ export default function ResetPass() {
         onSubmit:handleSubmit
     })
   return (
-    <div className='container  py-10'>
+    <div className='container  py-10 px-8'>
     <h1 className='text-center text-3xl font-bold'>Reset Password</h1>
     <form onSubmit={formik.handleSubmit} className="max-w-md mx-auto py-6">
       <div>

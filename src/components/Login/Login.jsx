@@ -43,7 +43,7 @@ export default function Login() {
   });
   return (
     <>
-      <form onSubmit={Formik.handleSubmit} className="max-w-md mx-auto py-6">
+      <form onSubmit={Formik.handleSubmit} className="max-w-md mx-auto py-6 px-8">
         <div className="relative z-0 w-full mb-5 group">
           <input
             onChange={Formik.handleChange}

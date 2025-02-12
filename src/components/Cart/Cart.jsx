@@ -12,7 +12,7 @@ export default function Cart() {
   return (
     <>
     {cartItems.totalCartPrice != 0 ? 
-    <div className="container my-5">
+    <div className="container my-5 px-5">
         <div className="bg-white shadow-md my-4 rounded-md">
           <div className="border-b  flex justify-between items-center px-4 py-1 bg-[#F9FAFB]">
             <h2 className=" text-2xl font-semibold text-[#0AAD0A] my-5 ">Cart Summary</h2>

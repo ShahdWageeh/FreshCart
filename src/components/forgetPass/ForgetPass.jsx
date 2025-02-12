@@ -33,7 +33,7 @@ export default function ForgetPass() {
   })
   return (
     <>
-    <div className='container min-h-[50vh] py-10'>
+    <div className='container min-h-[50vh] py-10 px-8'>
       <h1 className='text-center text-3xl font-bold'>Forget Password</h1>
       <form onSubmit={formik.handleSubmit} className="max-w-md mx-auto py-6">
         <div>

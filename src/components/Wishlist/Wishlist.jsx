@@ -12,7 +12,7 @@ export default function Wishlist() {
 
   return (
     <>
-      <div className="container bg-[#F8F9FA] my-8 pb-4">
+      <div className="container bg-[#F8F9FA] my-8 pb-4 px-3">
         <h1 className="text-3xl pt-5">My Wishlist</h1>
         {wishlistItems?.data?.map((item)=>{return <>
         <div className="flex flex-wrap justify-center items-center gap-3 my-3 pb-3 border-b">

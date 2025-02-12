@@ -6,7 +6,8 @@ export default {
       container: {
         center: true,
         padding: {
-          sm: '2rem',
+          default: '4rem',
+          sm: '4rem',
           lg: '4rem',
           xl: '5rem',
           '2xl': '6rem',
