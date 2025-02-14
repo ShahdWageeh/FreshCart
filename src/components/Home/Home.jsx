@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import ProductCard from "../productCard/ProductCard";
-import { Blocks } from "react-loader-spinner";
+import { Circles } from "react-loader-spinner";
 import { useQuery } from "react-query";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from 'swiper/modules';
 import slide1 from "../../assets/images/slider-image-1.jpeg";
 import slide2 from "../../assets/images/slider-image-2.jpeg";
 import slide3 from "../../assets/images/slider-image-3.jpeg";
-import static1 from '../../assets/images/blog-img-1.jpeg'
-import static2 from '../../assets/images/blog-img-2.jpeg'
+import static1 from '../../assets/images/2148015450.jpg'
+import static2 from '../../assets/images/blog-img-1.jpeg'
 import useCategories from "../../Hooks/useCategories";
 import useProducts from "../../Hooks/useProducts";
 export default function Home() {
@@ -76,13 +76,13 @@ export default function Home() {
       {/* all products */}
       {isLoading ? (
         <div className="h-screen flex justify-center items-center">
-          <Blocks
+          <Circles
             height="80"
             width="80"
             color="#0AAD0A"
-            ariaLabel="blocks-loading"
+            ariaLabel="Circles-loading"
             wrapperStyle={{}}
-            wrapperClass="blocks-wrapper"
+            wrapperClass="Circles-wrapper"
             visible={true}
           />
         </div>
