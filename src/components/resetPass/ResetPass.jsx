@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import axios from "axios";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useNavigate } from 'react-router-dom';
+import { AuthContext } from '../context/AuthContext';
 export default function ResetPass() {
     const navigate = useNavigate()
     const [error, setError] = useState(null);
+    const {setToken} = useContext(AuthContext)
     useEffect(()=>{
       document.title = 'Reset Password'
     },[])
@@ -17,6 +19,7 @@ export default function ResetPass() {
               newPassword: values.newPassword,
             });
             if (res.data.token) {
+              setToken(res.data.token)
               localStorage.setItem('token', res.data.token);
               navigate('/')
             } else {
