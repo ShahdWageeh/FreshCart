@@ -24,9 +24,9 @@ export default function Home() {
     <>
       {/* slider1 */}
       <div className="container my-5 px-10">
-        <div className="grid grid-cols-6">
+        <div className="lg:grid lg:grid-cols-6">
           <div className="col-span-4">
-            <Swiper slidesPerView={1} loop={true} style={{height:'100%'}}
+            <Swiper slidesPerView={1} loop={true} className="lg:h-[100%]"
             modules={[Pagination]} pagination={{clickable:true}}>
               <SwiperSlide className="h-full">
                 <img src={slide1} alt="" className="w-full h-full block" />
@@ -67,7 +67,7 @@ export default function Home() {
             },
           }}>
           {catData?.data.data.map((cat)=> <SwiperSlide key={cat._id}>
-            <img src={cat.image} alt="" className="w-full h-[200px]" />
+            <img src={cat.image} alt="" className="w-full h-[400px]" />
             <p>{cat.name}</p>
           </SwiperSlide>)}
         </Swiper>
