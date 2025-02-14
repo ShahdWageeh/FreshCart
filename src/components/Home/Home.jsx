@@ -42,8 +42,8 @@ export default function Home() {
             <div className="swiper-button-prev"></div>
           </div>
           <div className="col-span-2">
-            <img src={static1} alt="" className="h-1/2"/>
-            <img src={static2} alt="" className="h-1/2"/>
+            <img src={static1} alt="" className="w-full lg:h-1/2"/>
+            <img src={static2} alt="" className="w-full lg:h-1/2"/>
           </div>
         </div>
       </div>
